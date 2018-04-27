@@ -1,24 +1,129 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <scene sceneID="kN0-eG-Tnv">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                <viewController id="9T3-Wz-FbC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="dXh-YF-6Ph"/>
+                        <viewControllerLayoutGuide type="bottom" id="S2S-5U-UZK"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="zUL-84-JqU">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Devslopes BG - June 2017-1920x1080" translatesAutoresizingMaskIntoConstraints="NO" id="kwR-K0-teW">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="wCW-GS-Cle"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="devslopesProfileLogo" translatesAutoresizingMaskIntoConstraints="NO" id="9ej-Be-nsC">
+                                <rect key="frame" x="16" y="120" width="110" height="110"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="110" id="3yF-w3-0dn"/>
+                                    <constraint firstAttribute="width" constant="110" id="kGb-iy-Ygb"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Devslopes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LhZ-pa-mO9">
+                                <rect key="frame" x="134" y="162" width="89.5" height="26"/>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Y0m-1g-TaY">
+                                <rect key="frame" x="80.5" y="254" width="214" height="57"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eKQ-yG-1uA">
+                                        <rect key="frame" x="0.0" y="0.0" width="58" height="57"/>
+                                        <state key="normal" image="cameraButton"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O6Z-kX-1Sg">
+                                        <rect key="frame" x="78" y="0.0" width="58" height="57"/>
+                                        <state key="normal" image="favoriteButton"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lFn-na-BGs">
+                                        <rect key="frame" x="156" y="0.0" width="58" height="57"/>
+                                        <state key="normal" image="inboxButton"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="Y1E-RP-gdl">
+                                <rect key="frame" x="24" y="335" width="327" height="155.5"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Data Image" translatesAutoresizingMaskIntoConstraints="NO" id="cDq-z1-7Yi">
+                                        <rect key="frame" x="0.0" y="0.0" width="155.5" height="155.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="cDq-z1-7Yi" secondAttribute="height" multiplier="1:1" id="czE-Tr-9BE"/>
+                                            <constraint firstAttribute="width" relation="lessThanOrEqual" constant="140" id="x0b-kB-z5V"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Images Image" translatesAutoresizingMaskIntoConstraints="NO" id="dgf-gf-mv1">
+                                        <rect key="frame" x="171.5" y="0.0" width="155.5" height="155.5"/>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="Rel-Kh-e9D">
+                                <rect key="frame" x="24" y="505.5" width="327" height="155"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Videos Image" translatesAutoresizingMaskIntoConstraints="NO" id="PuL-c8-t9f">
+                                        <rect key="frame" x="0.0" y="0.0" width="155.5" height="155"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="PuL-c8-t9f" secondAttribute="height" multiplier="1:1" id="FDb-IT-FDO"/>
+                                            <constraint firstAttribute="width" relation="lessThanOrEqual" constant="140" id="ZlX-uB-ddb"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Code" translatesAutoresizingMaskIntoConstraints="NO" id="gKj-5n-rjr">
+                                        <rect key="frame" x="171.5" y="0.0" width="155.5" height="155"/>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="9ej-Be-nsC" firstAttribute="top" secondItem="dXh-YF-6Ph" secondAttribute="bottom" constant="100" id="862-J9-u0a"/>
+                            <constraint firstItem="kwR-K0-teW" firstAttribute="top" secondItem="zUL-84-JqU" secondAttribute="top" id="9oU-f2-63c"/>
+                            <constraint firstItem="Rel-Kh-e9D" firstAttribute="leading" secondItem="zUL-84-JqU" secondAttribute="leadingMargin" constant="8" id="DSW-Yx-bBp"/>
+                            <constraint firstAttribute="trailing" secondItem="kwR-K0-teW" secondAttribute="trailing" id="EO5-Mz-EHf"/>
+                            <constraint firstItem="LhZ-pa-mO9" firstAttribute="leading" secondItem="9ej-Be-nsC" secondAttribute="trailing" constant="8" id="Fiz-RY-ShU"/>
+                            <constraint firstItem="Y1E-RP-gdl" firstAttribute="top" secondItem="Y0m-1g-TaY" secondAttribute="bottom" constant="24" id="IzP-Rz-wdw"/>
+                            <constraint firstItem="Y0m-1g-TaY" firstAttribute="top" secondItem="9ej-Be-nsC" secondAttribute="bottom" constant="24" id="SSl-5w-qor"/>
+                            <constraint firstItem="Y0m-1g-TaY" firstAttribute="centerX" secondItem="zUL-84-JqU" secondAttribute="centerX" id="UQ3-b9-gd4"/>
+                            <constraint firstItem="kwR-K0-teW" firstAttribute="leading" secondItem="zUL-84-JqU" secondAttribute="leading" id="WZG-4l-wRF"/>
+                            <constraint firstItem="LhZ-pa-mO9" firstAttribute="centerY" secondItem="9ej-Be-nsC" secondAttribute="centerY" id="aCx-ZY-C7x"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Y1E-RP-gdl" secondAttribute="trailing" constant="8" id="eTf-d0-2ze"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Rel-Kh-e9D" secondAttribute="trailing" constant="8" id="fJ3-bF-0mm"/>
+                            <constraint firstItem="Y1E-RP-gdl" firstAttribute="leading" secondItem="zUL-84-JqU" secondAttribute="leadingMargin" constant="8" id="iDu-wT-jxu"/>
+                            <constraint firstItem="9ej-Be-nsC" firstAttribute="leading" secondItem="zUL-84-JqU" secondAttribute="leadingMargin" id="kZe-n5-xP6"/>
+                            <constraint firstItem="Rel-Kh-e9D" firstAttribute="top" secondItem="Y1E-RP-gdl" secondAttribute="bottom" constant="15" id="qzP-o2-Nbn"/>
+                        </constraints>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hpz-dK-PgJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-268" y="60.719640179910051"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Code" width="500" height="250"/>
+        <image name="Data Image" width="500" height="250"/>
+        <image name="Devslopes BG - June 2017-1920x1080" width="1920" height="1080"/>
+        <image name="Images Image" width="500" height="250"/>
+        <image name="Videos Image" width="500" height="250"/>
+        <image name="cameraButton" width="57" height="57"/>
+        <image name="devslopesProfileLogo" width="191" height="191"/>
+        <image name="favoriteButton" width="58" height="57"/>
+        <image name="inboxButton" width="57" height="57"/>
+    </resources>
 </document>
